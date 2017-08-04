@@ -45,8 +45,11 @@ body {
 
 <script>
 var results = location.search;
+var index = results.indexOf("=");
+console.log(index);
 console.log(results);
-/*document.getElementById("results").innerHTML;*/
+var string = results.substr(index+1, results.length);
+document.getElementById("results").innerHTML=string;
 /*function aboutus() {
     window.location.href = "about_uspage.html"
 }
