@@ -9,5 +9,6 @@ function done(){
     exerciseList.push(exerciseAmount);
     console.log(waterList);
     console.log(exerciseList);
-    /*window.location.href = "tab_page.html";*/
+    url="https://celinewang1.github.io/Healthy-Habits/tab_page.html?id=" + encodeURIComponent(waterAmount);
+    window.location.href = url;
 }

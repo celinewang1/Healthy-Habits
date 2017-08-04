@@ -95,7 +95,9 @@
 <h3>WATER</h3>
 
 <h4>How much water do you want to drink per day?</h4>
-<p><form action="tab_page.html" method="GET"><input type="text" id="waterInput"/></form></p>
+<form action="tab_page.html" method="GET">
+  <input type="text" name="w" id="waterInput"/>
+</form>
 <p>Recommended Amount: eight 8oz cups of water per day</p>
 <br>
 
@@ -106,12 +108,6 @@
 <p>Recommended Amount: 4 hours of exercise per week</p>
 <br>
 <p><button id="btnEnter" onclick="done()">DONE</button></p>
-
-<script>
-function done() {
-    window.location.href = "tab_page.html"
-}
-</script>
 
 </body>
 </html>
