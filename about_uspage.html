@@ -64,17 +64,32 @@ p {
     font-size: 20;
 }
 
-div {
+#div1 {
     background-color: linen;
     text-align: center;
     font-family: arial;
+}
+
+.div2 {
+    width: 400px;
+    height: 400;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: block;
+}
+
+img {
+    display: block;
+    margin: auto;
 }
 
 </style>
 
 <body>
 
-<div>
+<div id="div1">
     <br>
     <h1>ABOUT US</h1>
     <h2>Four girls from the heart of the Bay Area with a lot of heart.</h2>
@@ -83,16 +98,22 @@ div {
 
 <br>
 
-<h3>CELINE WANG</h3>
-<img src="celine.jpg">
+<table align="center"; cellpadding="20">
+  <tr>
+  <td><h3>CELINE WANG</h3>
+  <img src="celine.jpg" style="width: 400px; height: 400px;"></td>
 
-<h3>COURTNEY CHEN</h3>
-<img src="courtney.jpg">
+  <td><h3>COURTNEY CHEN</h3>
+  <img src="courtney.jpg" style="width: 400px; height: 400px;"></td>
+  </tr>
 
-<h3>OLIVE ACHOLONU</h3>
-<img src="olive.jpg">
+  <tr>
+  <td><h3>OLIVE ACHOLONU</h3>
+  <img src="olive.jpg" style="width: 400px; height: 400px;"></td>
 
-<h3>SHANAYA JAIN</h3>
-<img src="shanaya.jpg">
+  <td><h3>SHANAYA JAIN</h3>
+  <img src="shanaya.jpg" style="width: 400px; height: 400px;"></td>
+  </tr>
+</table>
 
 </html>
