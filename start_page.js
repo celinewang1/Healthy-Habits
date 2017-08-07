@@ -9,7 +9,6 @@ function done(){
     exerciseList.push(exerciseAmount);
     console.log(waterList);
     console.log(exerciseList);
-    url="https://celinewang1.github.io/Healthy-Habits/tab_page.html?id=" + encodeURIComponent(waterAmount);
-    url="https://celinewang1.github.io/Healthy-Habits/tab_page.html?id=" + encodeURIComponent(exerciseAmount);
+    url="https://celinewang1.github.io/Healthy-Habits/tab_page.html?wid=" + encodeURIComponent(waterAmount) + "eid=" + encodeURIComponent(exerciseAmount);
     window.location.href = url;
 }
