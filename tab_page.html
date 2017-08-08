@@ -40,10 +40,10 @@ body {
 <body>
 <div class="topnav">
   <a href="#aboutus">About Us</a>
-  <a href="#food">Food</a>
+  <a href="#meals">Meals</a>
   <a href="#exercise">Exercise</a>
-  <a href="#water">Water</a>
-  <a href="#yourgoals">Your Goals</a>
+  <a href="#hydration">Hydration</a>
+  <a href="#goals">Goals</a>
 </div>
 <p id="results"></p>
 </body>
@@ -53,8 +53,19 @@ var results = location.search;
 var index = results.indexOf("=");
 console.log(index);
 console.log(results);
+var text = new String();
+var resultsList = [];
+var len = results.length;
+
+for (var i=0; i<len; i++) {
+  if (isNaN(results[i])==false) {
+    text += results[i] + "<br>";
+  }
+}
+
+document.getElementById("results").innerHTML = text;
 /*var string = results.substr(index+1, results.length);*/
-document.getElementById("results").innerHTML=string;
+/*document.getElementById("results").innerHTML=string;*/
 /*function aboutus() {
     window.location.href = "about_uspage.html"
 }
