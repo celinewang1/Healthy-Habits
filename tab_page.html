@@ -30,29 +30,29 @@ body {
   background-color: steelblue;
   color: gainsboro;
 }
-
-#results {
-
-}
+/*#results {
+}*/
 
 </style>
 </head>
 <body>
 <div class="topnav">
-  <a href="#aboutus">About Us</a>
-  <a href="#meals">Meals</a>
-  <a href="#exercise">Exercise</a>
-  <a href="#hydration">Hydration</a>
-  <a href="#goals">Goals</a>
+  <a href="about_uspage.html">About Us</a>
+  <a href="suggested_meals.html">Meals</a>
+  <a href="dumbell_code.html">Exercise</a>
+  <a href="water.html">Hydration</a>
+  <a href="#window.location.href" onclick="myFunction()">Goals</a>
 </div>
 <p id="results"></p>
 </body>
 
 <script>
+var win = window.location.href;
 var results = location.search;
 var index = results.indexOf("=");
 console.log(index);
 console.log(results);
+
 var text = new String();
 var resultsList = [];
 var len = results.length;
@@ -62,24 +62,12 @@ for (var i=0; i<len; i++) {
     text += results[i] + "<br>";
   }
 }
-
+/*var string = results.substr(index+1, results.length);*/
 document.getElementById("results").innerHTML = text;
+function myFunction() {
+  window.location.href = win;
+}
 /*var string = results.substr(index+1, results.length);*/
 /*document.getElementById("results").innerHTML=string;*/
-function aboutus() {
-    window.location.href = "about_uspage.html"
-}
-function food() {
-    window.location.href = "suggested_meals.html"
-}
-function exercise() {
-    window.location.href = "dumbell_code.html"
-}
-function water() {
-    window.location.href = "water.html"
-}
-function yourgoals() {
-    window.location.href = "starter_page.html"
-}
 </script>
 </html>
