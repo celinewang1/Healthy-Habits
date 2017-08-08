@@ -53,13 +53,21 @@ var results = location.search;
 var index = results.indexOf("=");
 console.log(index);
 console.log(results);
-console.log("hello");
 var text = new String();
 //results.push(inputSummary);
+var resultsList = [];
 var len = results.length;
 console.log(len);
 for (var i=0; i<len; i++) {
   text += results[i] + "<br>";
+  print(text);
+  resultsList.push()
+/*  if (isNaN(text)==false) {
+} */
+  if (isNaN(text)==true) {
+    array.remove(text);
+  }
+print(text);
 }
 document.getElementById("results").innerHTML = text;
 /*var string = results.substr(index+1, results.length);*/
