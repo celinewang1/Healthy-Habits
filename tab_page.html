@@ -32,7 +32,9 @@ body {
 }
 #results {
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
+  font-family: arial;
+  color: #A8A29B;
 }
 
 </style>
@@ -68,11 +70,11 @@ for (var i=0; i<len; i++) {
 }
 var w = resultsList[0];
 var e = resultsList[1];
-text1 += "Your hydration goal is " + resultsList[0] + " eight oz cups of water every day.";
+text1 += "Your hydration goal is " + resultsList[0] + " eight oz cups of water every day." + "<br>";
 text2 += "Your exercise goal is " + resultsList[1] + " hours per week.";
 console.log(resultsList);
 /*var string = results.substr(index+1, results.length);*/
-document.getElementById("results").innerHTML = text1 + "<br>" + text2;
+document.getElementById("results").innerHTML = "<br>" + "<br>" +"<br>" + text1 + "<br>" + "<br>" + text2;
 function myFunction() {
   window.location.href = win;
 }
