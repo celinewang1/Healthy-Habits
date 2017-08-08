@@ -54,20 +54,15 @@ var index = results.indexOf("=");
 console.log(index);
 console.log(results);
 var text = new String();
-//results.push(inputSummary);
 var resultsList = [];
 var len = results.length;
-//console.log(len);
+
 for (var i=0; i<len; i++) {
-  text += resultsList[i] + "<br>";
-  console.log(text);
-  /*resultsList.push(text);*/
-/*  if (isNaN(text)==false) {
-} */
-  if (isNaN(text)==true) {
-    resultsList.remove(text);
+  if (isNaN(results[i])==false) {
+    text += results[i] + "<br>";
   }
 }
+
 document.getElementById("results").innerHTML = text;
 /*var string = results.substr(index+1, results.length);*/
 /*document.getElementById("results").innerHTML=string;*/
