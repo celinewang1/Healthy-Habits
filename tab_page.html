@@ -54,16 +54,19 @@ var index = results.indexOf("=");
 console.log(index);
 console.log(results);
 var text = new String();
+var resultsList = [];
 var len = results.length;
-console.log(len);
+
 for (var i=0; i<len; i++) {
-  text += results[i] + "<br>";
+  if (isNaN(results[i])==false) {
+    text += results[i] + "<br>";
+  }
 }
+
 document.getElementById("results").innerHTML = text;
 /*var string = results.substr(index+1, results.length);*/
 /*document.getElementById("results").innerHTML=string;*/
-/*var string = results.substr(index+1, results.length);*/
-/*function aboutus() {
+function aboutus() {
     window.location.href = "about_uspage.html"
 }
 function food() {
@@ -77,6 +80,6 @@ function water() {
 }
 function yourgoals() {
     window.location.href = "starter_page.html"
-}*/
+}
 </script>
 </html>
