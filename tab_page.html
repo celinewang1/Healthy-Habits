@@ -79,17 +79,7 @@ function myFunction() {
   window.location.href = win;
 }
 
-var waterAmount = document.getElementById("waterInput").value;
-/*console.log(waterAmount);*/
-var exerciseAmount = document.getElementById("exerciseInput").value;
-/*console.log(exerciseAmount);*/
-var waterList = [];
-var exerciseList = [];
-waterList.push(waterAmount);
-exerciseList.push(exerciseAmount);
-console.log(waterList);
-console.log(exerciseList);
-url="https" + "://celinewang1.github.io/Healthy-Habits/tab_page.html?wid=" + encodeURIComponent(waterAmount) + "eid=" + encodeURIComponent(exerciseAmount);
+url="https" + "://celinewang1.github.io/Healthy-Habits/tab_page.html?wid=" + resultsList[0] + "eid=" + resultsList[1];
 //url="file"+":///C:/Users/Admin/Healthy-Habits/tab_page.html?wid=" + encodeURIComponent(waterAmount) + "eid=" + encodeURIComponent(exerciseAmount);
 window.location.href = url;
 /*var string = results.substr(index+1, results.length);*/
