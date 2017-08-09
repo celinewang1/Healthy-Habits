@@ -1,5 +1,5 @@
 
-function displayWater(cups){
+var cups = 8;
 var cols = 4;
 var rows = Math.ceil(cups/4);
 var i = 1;
@@ -24,5 +24,4 @@ for (var r = 1; r <= rows; r++)
    table += '</tr>';
 }
 table += '</table>';
-return table;
-}                      
+document.write(table);
