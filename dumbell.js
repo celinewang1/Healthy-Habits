@@ -56,5 +56,4 @@ for(var r = 1; r < (rows+1); r++)
 table += '</table>';
 console.log(table);
 
-
 document.write(table);
