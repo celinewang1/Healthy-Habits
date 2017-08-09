@@ -25,11 +25,11 @@ body {
 }
 ul{
   list-style-position: inside;
-  text-align: left;
+  text-align: center;
   font-family: arial;
   font-size: 25px;
   list-style-type: circle;
-  color: #A8A29B;
+  color: #808000;
 }
 div {
 
@@ -45,29 +45,7 @@ h3 {
     font-family: arial;
     font-size: 35px;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #BDD6FF;
-}
 
-.topnav a {
-  float: right;
-  display: block;
-  color: steelblue;
-  text-align: center;
-  padding: 20px 60px;
-  font-size: 20px;
-  text-decoration: none;
-  font-family: arial;
-}
-.tobnav a.active {
-  background-color: blue;
-  color: gainsboro;
-}
-.topnav a:hover {
-  background-color: steelblue;
-  color: gainsboro;
-}
 </style>
 <head>
 <title>Meals</title>
@@ -75,11 +53,11 @@ h3 {
 
 <body>
   <div class="topnav">
-    <a href="about_uspage.html">About Us</a>
-    <a href="suggested_meals.html">Meals</a>
-    <a href="dumbell_code.html">Exercise</a>
-    <a href="water.html">Hydration</a>
-    <a href="tab_page.html">Goals</a>
+    <a href="#about_uspage.html" onclick="AboutUs">About Us</a>
+    <a href="#suggested_meals.html" onclick="Meals()">Meals</a>
+    <a href="#dumbell_code.html" onclick="Exercise()">Exercise</a>
+    <a href="#water.html" onclick="Hydration()">Hydration</a>
+    <a href="#window.location.href" onclick="Goals()">Goals</a>
   </div>
 <div>
     <br>
@@ -88,82 +66,52 @@ h3 {
     <br>
 </div>
 <br>
-<table align="center";>
-<tr>
-  <td width="30%">
-  <img src="yogurt.jpg" alt="Greek Yogurt" style="width:250px;height:250px;">
-  </td>
-<td>
-<h3>PRE-WORKOUT SNACKS</h3>
+
+<h3 style="margin-left 150px;">PRE-WORKOUT SNACKS</h3>
 <ul>
   <li>Apple or Pear</li>
-  <li>3/4 cup Greek yogurt with 1 tablespoon of granola and 1/2 cup of berries</li>
+  <li margin-left: -200px;>3/4 cup Greek yogurt with 1 tablespoon of granola and 1/2 cup of berries</li>
   <li>2 tablespoons dried fruit with 1 tablespoon unsalted nuts </li>
   <li>100-cal granola bar</li>
 </ul>
 <br>
-</td>
-</tr>
-<br>
-</table>
-
-<table padding="100px"; align="center";>
-  <br>
-  <br>
-<tr>
-<td>
-<h3>PRE-WORKOUT MEALS</h3>
+<img src="yogurt.jpg" alt="Greek Yogurt" style="float:left;width:250px;height:250px;margin-left:20px">
+<img src="salmon.jpg" alt="Salmon" style="float:right;width:300px;height:200px;margin-right:20px" >
+<h3 style="margin-left:350px;">PRE-WORKOUT MEALS</h3>
 <ul>
   <li>Oatmeal with Peanut Butter and 1/2 cup fruit</li>
   <li>4 oz Baked Salmon, 3/4 cup brown rice, 1 cup roasted veggies</li>
 </ul>
-</td>
-<td width="39%">
-<img src="salmon.jpg" alt="Salmon" style="width:300px;height:200px;">
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-  <br>
-  <br>
-  <td width="37%">
-  <img src="toast.png" alt="Wheat Toast with Banana" style="width:250px;height:200px;">
-  </td>
-<td>
-<h3>POST-WORKOUT SNACKS</h3>
+<h3 style="margin-right:250px;">POST-WORKOUT SNACKS</h3>
 <ul>
   <li>1 Slice whole wheat toast, 1 tablespoon peanut butter  and half banana</li>
   <li>2 Hard-boiled Eggs with 1 slice whole wheat toast</li>
-</td>
-</tr>
-</table>
-
-<table align = "center">
-<br>
-<br>
-<tr>
-<td>
 <h3>POST-WORKOUT MEALS</h3>
 <ul>
   <li>Whole wheat pita with grilled veggies and 2 tablespoons hummus</li>
-  <li>Green Protein Smoothie</li>
-    <ul>
-      <li>2 cups baby spinach</li>
-      <li>6 oz nonfat greek yogurt</li>
-      <li>1/2 cup organic tofu</li>
-      <li>1 cup frozen strawberries</li>
-      <li>2 tablespoons chia seeds</li>
-    </ul>
+  <li>Green Protein Smoothie: 2 cups baby spinach, 6 oz nonfat greek yogurt, 1/2 cup organic tofu, 1 cup frozen strawberries, 2 tablespoons chia seeds</li>
   <li>Veggie Omelet with avocado and 1/2 cup roasted potatoes</li>
-</ul>
-</td>
-<td width="37%">
-<img src="pita.jpg" alt="Whole Wheat Pita" style="width:250px;height:300px;">
-</td>
-</tr>
-</table>
-
+<script>
+function AboutUs() {
+  var a = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/about_uspage.html" + location.search;
+  window.location.href = a;
+}
+function Meals() {
+  var m = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/suggested_meals.html" + location.search;
+  window.location.href = m;
+}
+function Exercise() {
+  var e = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/dumbell_code.html" + location.search;
+  window.location.href = e;
+}
+function Hydration() {
+  var h = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/water.html" + location.search;
+  window.location.href = h;
+}
+function Goals() {
+  var g = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/tab_page.html" + location.search;
+  window.location.href = g;
+}
+</script>
 </body>
 </html>
