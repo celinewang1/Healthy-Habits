@@ -2,16 +2,71 @@
 <html>
 <head>
 <style>
-body {
-  margin:0;
-  background-color: linen;
+html,body {
+    margin: 0px;
 }
-
+td{
+  padding: 5px;
+  text-align: center;
+}
+h1 {
+    color: steelblue;
+    text-align: center;
+    font-family: arial;
+    font-size: 50px;
+}
+h2 {
+    color: steelblue;
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+}
+body {
+    background-color: #BDD6FF;
+}
+button {
+    color: steelblue;
+    font-family: arial;
+    font-size: 15px;
+    background-color: linen;
+    border: 2px solid #104E8B;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    opacity: inherit;
+}
+button:hover {
+    background-color: steelblue;
+    color: linen;
+    opacity: inherit;
+}
+h3 {
+    color: #A8A29B;
+    text-align: center;
+    font-family: arial;
+    font-size: 35px;
+}
+h4 {
+    color: #A8A29B;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+}
+p {
+    color: #A8A29B;
+    text-align: center;
+    font-family: arial;
+    font-size: 20;
+}
+div {
+    background-color: linen;
+    text-align: center;
+    font-family: arial;
+}
 .topnav {
   overflow: hidden;
   background-color: #BDD6FF;
 }
-
 .topnav a {
   float: right;
   display: block;
@@ -47,6 +102,12 @@ body {
   <a href="water.html">Hydration</a>
   <a href="#window.location.href" onclick="myFunction()">Goals</a>
 </div>
+<div>
+<br>
+<h1>GOALS</h1>
+<h2>You are your only limit.</h2>
+<br>
+</div>
 <p id="results"></p>
 </body>
 
@@ -74,7 +135,7 @@ text1 += "Your hydration goal is " + resultsList[0] + " eight-oz cups of water e
 text2 += "Your exercise goal is " + resultsList[1] + " hours per week.";
 console.log(resultsList);
 /*var string = results.substr(index+1, results.length);*/
-document.getElementById("results").innerHTML = "<br>" + "<br>" +"<br>" + text1 + "<br>" + "<br>" + text2;
+document.getElementById("results").innerHTML = "<br>" +"<br>" + text1 + "<br>" + text2;
 function myFunction() {
   window.location.href = win;
 }
