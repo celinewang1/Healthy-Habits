@@ -86,11 +86,39 @@ img {
     display: block;
     margin: auto;
 }
+.topnav {
+  overflow: hidden;
+  background-color: #BDD6FF;
+}
 
+.topnav a {
+  float: right;
+  display: block;
+  color: steelblue;
+  text-align: center;
+  padding: 20px 60px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: arial;
+}
+.tobnav a.active {
+  background-color: blue;
+  color: gainsboro;
+}
+.topnav a:hover {
+  background-color: steelblue;
+  color: gainsboro;
+}
 </style>
 
 <body>
-
+  <div class="topnav">
+    <a href="about_uspage.html">About Us</a>
+    <a href="suggested_meals.html">Meals</a>
+    <a href="dumbell_code.html">Exercise</a>
+    <a href="water.html">Hydration</a>
+    <a href="tab_page.html">Goals</a>
+  </div>
 <div id="div1">
     <br>
     <h1>ABOUT US</h1>
@@ -98,24 +126,22 @@ img {
     <br>
 </div>
 
-<br>
-
-<table align="center"; cellpadding="20">
+<table align="center"; cellpadding="40px">
   <tr>
   <td><h3>CELINE WANG</h3>
-  <img src="celine.jpg" style="width: 400px; height: 400px;"></td>
+  <img src="celine.jpg" style="width: 500px; height: 500px;"></td>
 
   <td><h3>COURTNEY CHEN</h3>
-  <img src="courtney.jpg" style="width: 400px; height: 400px;"></td>
+  <img src="courtney.jpg" style="width: 500px; height: 500px;"></td>
   </tr>
-
   <tr>
   <td><h3>OLIVE ACHOLONU</h3>
-  <img src="olive.jpg" style="width: 400px; height: 400px;"></td>
+  <img src="olive.jpg" style="width: 500px; height: 500px;"></td>
 
   <td><h3>SHANAYA JAIN</h3>
-  <img src="shanaya.jpg" style="width: 400px; height: 400px;"></td>
+  <img src="shanaya.jpg" style="width: 500px; height: 500px;"></td>
   </tr>
 </table>
+<br>
 
 </html>

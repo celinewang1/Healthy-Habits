@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html>
 <style>
-
 html,body {
     margin: 0px;
 }
-
 td{
   padding: 5px;
   text-align: center;
 }
-
 h1 {
     color: steelblue;
     text-align: center;
     font-family: arial;
     font-size: 50px;
 }
-
 h2 {
     color: steelblue;
     text-align: center;
     font-family: arial;
     font-size: 20px;
 }
-
 body {
     background-color: #BDD6FF;
 }
-
 button {
     color: steelblue;
     font-family: arial;
@@ -40,44 +34,66 @@ button {
     text-align: center;
     opacity: inherit;
 }
-
 button:hover {
     background-color: steelblue;
     color: linen;
     opacity: inherit;
 }
-
-
 h3 {
     color: #A8A29B;
     text-align: center;
     font-family: arial;
     font-size: 35px;
 }
-
 h4 {
     color: #A8A29B;
     text-align: center;
     font-family: arial;
     font-size: 25px;
 }
-
 p {
     color: #A8A29B;
     text-align: center;
     font-family: arial;
     font-size: 20;
 }
-
 div {
     background-color: linen;
     text-align: center;
     font-family: arial;
 }
-
+.topnav {
+  overflow: hidden;
+  background-color: #BDD6FF;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: steelblue;
+  text-align: center;
+  padding: 20px 60px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: arial;
+}
+.tobnav a.active {
+  background-color: blue;
+  color: gainsboro;
+}
+.topnav a:hover {
+  background-color: steelblue;
+  color: gainsboro;
+}
 </style>
+<body>
 <title>Exercise</title>
-
+<div class="topnav">
+  <a href="about_uspage.html">About Us</a>
+  <a href="suggested_meals.html">Meals</a>
+  <a href="dumbell_code.html">Exercise</a>
+  <a href="water.html">Hydration</a>
+  <a href="tab_page.html">Goals</a>
+</div>
 <div>
   <br>
   <h1>EXERCISE</h1>
@@ -85,63 +101,6 @@ div {
   <br>
 </div>
 
-<table style="width:75%" align="center">
-<tr>
-  <td><img id="dumbell1" src="picmonkeydumbells.png" style="width:150px">
-     <br>
-
-      <button onclick="document.getElementById('dumbell1').src='picmonkeydumbells.png'">Reset</button><br><br>
-      <button onclick="document.getElementById('dumbell1').src='colored dumbell.png'"> Add 30 Mintues</button>
-    <br>
-  </td>
-    <td><img id="dumbell2" src="picmonkeydumbells.png" style="width:150px">
-      <br>
-        <button onclick="document.getElementById('dumbell2').src='picmonkeydumbells.png'">Reset</button><br><br>
-        <button onclick="document.getElementById('dumbell2').src='colored dumbell.png'">Add 30 Mintues</button>
-        <br>
-      </td>
-<td><img id="dumbell3" src="picmonkeydumbells.png" style ="width:150px">
-   <br>
-    <button onclick="document.getElementById('dumbell3').src='picmonkeydumbells.png'">Reset</button><br><br>
-    <button onclick="document.getElementById('dumbell3').src='colored dumbell.png'">Add 30 Mintues</button>
-
-     <br>
-    </td>
-    <td><img id="dumbell4" src="picmonkeydumbells.png" style="width:150px">
-      <br>
-        <button onclick="document.getElementById('dumbell4').src='picmonkeydumbells.png'">Reset</button><br><br>
-        <button onclick="document.getElementById('dumbell4').src='colored dumbell.png'">Add 30 Mintues</button>
-       <br>
-     </td>
-   </tr>
-
-<tr>
-   <td><img id="dumbell5" src="picmonkeydumbells.png" style="width:150px">
-      <br>
-      <button onclick="document.getElementById('dumbell5').src='picmonkeydumbells.png'">Reset</button><br><br>
-      <button onclick="document.getElementById('dumbell5').src='colored dumbell.png'">Add 30 Mintues</button>
-
-       <br>
-     </td>
-      <td><img id="dumbell6" src="picmonkeydumbells.png" style="width:150px">
-         <br>
-          <button onclick="document.getElementById('dumbell6').src='picmonkeydumbells.png'">Reset</button><br><br>
-          <button onclick="document.getElementById('dumbell6').src='colored dumbell.png'">Add 30 Mintues</button>
-         <br>
-       </td>
- <td><img id="dumbell7" src="picmonkeydumbells.png" style="width:150px">
-   <br>
-    <button onclick="document.getElementById('dumbell7').src='picmonkeydumbells.png'">Reset</button><br><br>
-    <button onclick="document.getElementById('dumbell7').src='colored dumbell.png'">Add 30 Mintues</button>
-     <br>
-    </td>
-     <td><img id="dumbell8" src="picmonkeydumbells.png" style="width:150px">
-       <br>
-        <button onclick="document.getElementById('dumbell8').src='picmonkeydumbells.png'">Reset</button><br><br>
-        <button onclick="document.getElementById('dumbell8').src='colored dumbell.png'">Add 30 Mintues</button>
-         <br>
-       </td>
-     </tr>
-</table>
+<script src="dumbell.js"></script>
 </body>
 </html>
