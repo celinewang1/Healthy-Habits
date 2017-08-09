@@ -58,6 +58,7 @@ console.log(table);
 
 document.write(table);
 
+
 var waterAmount = document.getElementById("waterInput").value;
 /*console.log(waterAmount);*/
 var exerciseAmount = document.getElementById("exerciseInput").value;
