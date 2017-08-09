@@ -1,4 +1,4 @@
-var hours = 3;
+var hours = 4;
 var cols = 4;
 var half = hours*2;
 var rows = Math.ceil(half/4);
@@ -41,7 +41,7 @@ for(var r = 1; r < (rows+1); r++)
       table +=  '</td>'
      }
    }
-   if ((half < 4) && (r != rows)){
+   if (half < 4){
      for (var c = 0; c < half; c++) {
        table += '<td><img id="dumbell1" src="picmonkeydumbells.png" style="width:150px">';
        table +=  '<br>';
