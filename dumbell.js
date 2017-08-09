@@ -1,4 +1,3 @@
-
 var hours = 3;
 var cols = 4;
 var half = hours*2;
