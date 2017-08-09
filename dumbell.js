@@ -7,6 +7,7 @@ if ((half % 4) != 0){
   var extra = half % 4;
 }
 var table = '<table style="width:75%" align="center">';
+
 for(var r = 1; r < (rows+1); r++)
 {
    table += '<tr>';
