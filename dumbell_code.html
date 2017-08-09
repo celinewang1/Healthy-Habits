@@ -100,7 +100,34 @@ div {
   <h2>Sore today, strong tomorrow.</h2>
   <br>
 </div>
-
-<script src="dumbell.js"></script>
+<script>
+  var i = 1;
+  var dumbells = 8;
+  var cols = 4;
+  var rows = Math.ceil(dumbells/4);
+  var table = '<table align = "center"; width = "75%">';
+  for (var r = 1; r <= rows; r++)
+  {
+     table += '<tr>';
+     for (var c = 0; c < cols; c++) {
+       if (i <= dumbells) {
+         table += '<td><img id=\'dumbell' + i + '\' src=\'picmonkeydumbells.png\' style="width:200px">';
+         table += '<br><br>'
+         table += '<button class="button" onclick="document.getElementById(\'dumbell' + i + '\').src=\'picmonkeydumbells.png\'">Reset</button>';
+         table += '<br><br>';
+         table += '<button class="button" onclick="document.getElementById(\'dumbell' + i + '\').src=\'colored dumbell.png\'">Add 30 Mintues</button>';
+         table += '<br><br><br>';
+         table += '</td>';
+         i++;
+       }
+     }
+  
+     table += '<br>';
+     table += '</tr>';
+  }
+  table += '</table>';
+  document.write(table);
+</script>
+</div>
 </body>
 </html>
