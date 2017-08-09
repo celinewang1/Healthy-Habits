@@ -66,7 +66,7 @@ div {
   overflow: hidden;
   background-color: #BDD6FF;
 }
-/*.topnav a {
+.topnav a {
   float: right;
   display: block;
   color: steelblue;
@@ -75,37 +75,60 @@ div {
   font-size: 20px;
   text-decoration: none;
   font-family: arial;
-}*/
-/*.tobnav a.active {
+}
+.tobnav a.active {
   background-color: blue;
   color: gainsboro;
-}*/
-/*.topnav a:hover {
+}
+.topnav a:hover {
   background-color: steelblue;
   color: gainsboro;
-}*/
+}
 </style>
 
 <body>
 <title>Exercise</title>
-<!--<div class="topnav">
+<div class="topnav">
   <a href="about_uspage.html">About Us</a>
   <a href="suggested_meals.html">Meals</a>
   <a href="dumbell_code.html">Exercise</a>
   <a href="water.html">Hydration</a>
   <a href="tab_page.html">Goals</a>
-</div>-->
+</div>
 <div>
   <br>
   <h1>EXERCISE</h1>
   <h2>Sore today, strong tomorrow.</h2>
-
+   <br>
   <br>
 
-  </tr>
-  </table>
-
 </div>
-<script src="dumbell.js"></script>
+<script>
+var i = 1;
+var dumbells = 8;
+var cols = 4;
+var rows = Math.ceil(dumbells/4);
+var table = '<table style="width:75%" align="center">';
+for (var r = 1; r <= rows; r++)
+{
+   table += '<tr>';
+   for (var c = 0; c < cols; c++) {
+     if (i <= dumbells) {
+
+            table += '<td><img id=\'dumbell' + i + '\' src=\'picmonkeydumbells.png\' style="width:150px">';
+            table += '<br><br>';
+            table += '<button class="button" onclick="document.getElementById(\'dumbell' + i + '\').src=\'picmonkeydumbells.png\'">Reset</button>';
+            table += '<br><br>';
+            table += '<button class="button" onclick="document.getElementById(\'dumbell' + i + '\').src=\'colored dumbell.png\'">Add 30 Mintues</button>';
+            table += '<br><br>';
+            table += '</td>';
+            i++;
+          }
+        }
+        table += '</tr>';
+     }
+     table += '</table>';
+     document.write(table);
+</script>
 </body>
 </html>
