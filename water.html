@@ -46,10 +46,39 @@ div {
     text-align: center;
     font-family: arial;
 }
+.topnav {
+  overflow: hidden;
+  background-color: #BDD6FF;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: steelblue;
+  text-align: center;
+  padding: 20px 60px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: arial;
+}
+.tobnav a.active {
+  background-color: blue;
+  color: gainsboro;
+}
+.topnav a:hover {
+  background-color: steelblue;
+  color: gainsboro;
+}
 </style>
 </head>
 <body>
-
+  <div class="topnav">
+    <a href="about_uspage.html">About Us</a>
+    <a href="suggested_meals.html">Meals</a>
+    <a href="dumbell_code.html">Exercise</a>
+    <a href="water.html">Hydration</a>
+    <a href="tab_page.html">Goals</a>
+  </div>
 <div>
 <br>
 <h1>HYDRATION</h1>
@@ -58,10 +87,8 @@ div {
 </div>
 <br>
 <br>
-<br>
 <script>
-
-var cups = 13;
+var cups = 5;
 var cols = 4;
 var rows = Math.ceil(cups/4);
 if ((cups % 4) != 0){
@@ -87,10 +114,9 @@ for(var r = 1; r < (rows+1); r++)
        i = i ++;
      }
    }
-
    if ((r == rows) && ((cups % 4) !== 0) && (cups >= 4)) {
      for (var c = 0; c < extra; c++){
-       table += '<td><img id=id="bottle{i}" src=\'empty.png\' style="width:100px"/>';
+       table += '<td><img id="bottle{i}" src=\'empty.png\' style="width:100px"/>';
        table += '<br><br>';
        table += '<button class="button" onclick="document.getElementById(\'bottle{i}\')">Empty</button>';
        table += '<br><br>';
@@ -103,7 +129,7 @@ for(var r = 1; r < (rows+1); r++)
    }
    if ((r == rows) && ((cups % 4) == 0) && (cups >= 4)) {
      for (var c = 0; c < cols; c++){
-       table += '<td><img id=id="bottle{i}" src=\'empty.png\' style="width:100px"/>';
+       table += '<td><img id="bottle{i}" src=\'empty.png\' style="width:100px"/>';
        table += '<br><br>';
        table += '<button class="button" onclick="document.getElementById(\'bottle{i}\')">Empty</button>';
        table += '<br><br>';
@@ -114,9 +140,9 @@ for(var r = 1; r < (rows+1); r++)
        i = i++;
      }
    }
-   if ((cups < 4) && (r != rows)){
+   if (cups < 4){
      for (var c = 0; c < cups; c++) {
-         table += '<td><img id=id="bottle{i}" src=\'empty.png\' style="width:100px"/>';
+         table += '<td><img id="bottle{i}" src=\'empty.png\' style="width:100px"/>';
          table += '<br><br>';
          table += '<button class="button" onclick="document.getElementById(\'bottle{i}\').src=\'empty.png\'">Empty</button>';
          table += '<br><br>';
@@ -131,10 +157,7 @@ for(var r = 1; r < (rows+1); r++)
 }
 table += '</table>';
 console.log(table);
-
-
 document.write(table);
-
 </script>
 </body>
 </html>
