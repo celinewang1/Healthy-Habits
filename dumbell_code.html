@@ -89,11 +89,11 @@ div {
 <body>
 <title>Exercise</title>
 <div class="topnav">
-  <a href="about_uspage.html">About Us</a>
-  <a href="suggested_meals.html">Meals</a>
-  <a href="dumbell_code.html">Exercise</a>
-  <a href="water.html">Hydration</a>
-  <a href="tab_page.html">Goals</a>
+  <a href="#about_uspage.html" onclick="AboutUs">About Us</a>
+  <a href="#suggested_meals.html" onclick="Meals()">Meals</a>
+  <a href="#dumbell_code.html" onclick="Exercise()">Exercise</a>
+  <a href="#water.html" onclick="Hydration()">Hydration</a>
+  <a href="#window.location.href" onclick="Goals()">Goals</a>
 </div>
 <div>
   <br>
@@ -129,6 +129,26 @@ for (var r = 1; r <= rows; r++)
      }
      table += '</table>';
      document.write(table);
+  function AboutUs() {
+    var a = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/about_uspage.html" + location.search;
+    window.location.href = a;
+     }
+  function Meals() {
+    var m = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/suggested_meals.html" + location.search;
+    window.location.href = m;
+     }
+  function Exercise() {
+    var e = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/dumbell_code.html" + location.search;
+    window.location.href = e;
+     }
+  function Hydration() {
+    var h = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/water.html" + location.search;
+    window.location.href = h;
+     }
+  function Goals() {
+    var g = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/tab_page.html" + location.search;
+    window.location.href = g;
+     }
 </script>
 </body>
 </html>
