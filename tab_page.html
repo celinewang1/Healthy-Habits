@@ -96,7 +96,7 @@ div {
 </head>
 <body>
 <div class="topnav">
-  <a href="#about_uspage.html" onclick="AboutUs">About Us</a>
+  <a href="#about_uspage.html" onclick="AboutUs()">About Us</a>
   <a href="#suggested_meals.html" onclick="Meals()">Meals</a>
   <a href="#dumbell_code.html" onclick="Exercise()">Exercise</a>
   <a href="#water.html" onclick="Hydration()">Hydration</a>
@@ -117,6 +117,7 @@ var results = location.search;
 var index = results.indexOf("=");
 console.log(index);
 console.log(results);
+
 
 var text1 = new String();
 var text2 = new String();
