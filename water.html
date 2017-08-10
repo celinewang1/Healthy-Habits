@@ -76,7 +76,7 @@ div {
     <a href="#suggested_meals.html" onclick="Meals()">Meals</a>
     <a href="#dumbell_code.html" onclick="Exercise()">Exercise</a>
     <a href="#water.html" onclick="Hydration()">Hydration</a>
-    <a href="#tab_page.html" onclick="Goals()">Goals</a>
+    <a href="#window.location.href" onclick="Goals()">Goals</a>
   </div>
 <div>
 <br>
@@ -84,9 +84,10 @@ div {
 <h2>Motivate, Hydrate, Feel Great.</h2>
 <br>
 </div>
+</body>
 <script>
 var i = 1;
-var cups = parseInt(localStorage.getItem('waterCups'));
+var cups = 8;
 var cols = 4;
 var rows = Math.ceil(cups/4);
 var table = '<table align = "center"; width = "50%">';
@@ -107,7 +108,8 @@ for (var r = 1; r <= rows; r++)
        i++;
      }
    }
-   table += '<br><br><br><br>';
+   table += '<br><br><br>';
+   table += '<br>';
    table += '</tr>';
 }
 table += '</table>';
@@ -133,5 +135,4 @@ function Goals() {
   window.location.href = g;
 }
 </script>
-</body>
 </html>
