@@ -11,4 +11,5 @@ function done(){
     console.log(exerciseList);
     url="https" + "://celinewang1.github.io/Healthy-Habits/tab_page.html?wid=" + encodeURIComponent(waterAmount) + "eid=" + encodeURIComponent(exerciseAmount);
     window.location.href = url;
+    
 }

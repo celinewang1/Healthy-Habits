@@ -95,13 +95,13 @@ div {
 </style>
 </head>
 <body>
-  <div class="topnav">
-    <a href="#about_uspage.html" onclick="AboutUs">About Us</a>
-    <a href="#suggested_meals.html" onclick="Meals()">Meals</a>
-    <a href="#dumbell_code.html" onclick="Exercise()">Exercise</a>
-    <a href="#water.html" onclick="Hydration()">Hydration</a>
-    <a href="#tab_page.html" onclick="Goals()">Goals</a>
-  </div>
+<div class="topnav">
+  <a href="#about_uspage.html" onclick="AboutUs">About Us</a>
+  <a href="#suggested_meals.html" onclick="Meals()">Meals</a>
+  <a href="#dumbell_code.html" onclick="Exercise()">Exercise</a>
+  <a href="#water.html" onclick="Hydration()">Hydration</a>
+  <a href="#window.location.href" onclick="Goals()">Goals</a>
+</div>
 <div>
 <br>
 <h1>GOALS</h1>
@@ -117,10 +117,15 @@ var results = location.search;
 var index = results.indexOf("=");
 console.log(index);
 console.log(results);
+<<<<<<< HEAD
 
 var text1 = new String();
 var text2 = new String();
 var resultsList = [];
+=======
+var text = new String();
+//results.push(inputSummary);
+>>>>>>> changes
 var len = results.length;
 
 for (var i=0; i<len; i++) {
@@ -136,10 +141,6 @@ text2 += "Your exercise goal is " + resultsList[1] + " hours per week.";
 console.log(resultsList);
 /*var string = results.substr(index+1, results.length);*/
 document.getElementById("results").innerHTML = "<br>" +"<br>" + text1 + "<br>" + text2;
-function myFunction() {
-  window.location.href = win;
-}
-
 function AboutUs() {
   var a = window.location.protocol + "//" + window.location.hostname + "/Healthy-Habits/about_uspage.html" + location.search;
   window.location.href = a;
