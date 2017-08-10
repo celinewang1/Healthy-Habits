@@ -2,6 +2,7 @@ function done(){
     var waterAmount = document.getElementById("waterInput").value;
     /*console.log(waterAmount);*/
     var exerciseAmount = document.getElementById("exerciseInput").value;
+    localStorage.setItem('waterCups', waterAmount);
     /*console.log(exerciseAmount);*/
     var waterList = [];
     var exerciseList = [];

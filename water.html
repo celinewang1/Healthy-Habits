@@ -86,7 +86,7 @@ div {
 </div>
 <script>
 var i = 1;
-var cups = 8;
+var cups = parseInt(localStorage.getItem('waterCups'));
 var cols = 4;
 var rows = Math.ceil(cups/4);
 var table = '<table align = "center"; width = "50%">';
@@ -107,7 +107,7 @@ for (var r = 1; r <= rows; r++)
        i++;
      }
    }
-   
+
    table += '<br>';
    table += '</tr>';
 }
